@@ -9,4 +9,8 @@ describe("QuickSort", function() {
     expect(sort([2,1,1])).toEqual([1,1,2]);
   }
   );
+  it("sort smaller element with multiple pivot", function() {
+    expect(sort([2,2,1])).toEqual([1,2,2]);
+  }
+  );
 });
