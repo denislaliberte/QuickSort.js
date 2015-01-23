@@ -4,4 +4,8 @@ describe("QuickSort", function() {
     expect(sort([1])).toEqual([1]);
     }
   );
+  it("sort smalle element", function() {
+    expect(sort([2,1])).toEqual([1,2]);
+  }
+  );
 });
