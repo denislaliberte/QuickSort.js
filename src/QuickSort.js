@@ -6,7 +6,7 @@ sort = function(input) {
     var pivot = input[0]
     var smaller = input.filter(function(item){return item < pivot});
     var pivots = input.filter(function(item){return item == pivot});
-    var result = [pivot].concat(smaller);
-    return smaller.concat(pivots);
+    var greater = input.filter(function(item){return item > pivot});
+    return smaller.concat(pivots).concat(greater);
   }
 }

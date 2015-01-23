@@ -13,4 +13,8 @@ describe("QuickSort", function() {
     expect(sort([2,2,1])).toEqual([1,2,2]);
   }
   );
+  it("sort grater element", function() {
+    expect(sort([1,2,1])).toEqual([1,1,2]);
+  }
+  );
 });
